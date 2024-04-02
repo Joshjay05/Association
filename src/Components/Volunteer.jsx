@@ -29,7 +29,7 @@ const Volunteer = () => {
 				<img
 					src={volImage}
 					alt="banner"
-					className="sm:hidden md:hidden lg:h-[79vh]"
+					className="sm:hidden md:hidden lg:h-[74vh]"
 				/>
 			</div>
 		</article>
