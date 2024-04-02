@@ -10,12 +10,12 @@ const Navbar = () => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 	const [isMenuToggled, setIsMenuToggled] = useState(false);
 	return (
-		<header className="bg-[#2d2735] relative  md:h-100vh md:pb-10 md:pt-2">
+		<header className="bg-[#2d2735] relative  md:h-100vh md:pb-10 md:pt-2 sm:pb-10">
 			<nav
 				className="flex flex-row items-center 
          py-2  mx-auto w-{80%} justify-between ">
 				<article className="pl-[4%]">
-					<img src={logo} alt="logo" className="md:h-[6vh]" />
+					<img src={logo} alt="logo" className="md:h-[6vh] sm:h-6" />
 				</article>
 				{isAboveMediumScreens ? (
 					<article className="flex flex-row gap-4 items-center mr-[6rem] ">
@@ -34,9 +34,9 @@ const Navbar = () => {
 						</Button>
 					</article>
 				) : (
-					<div className="rounded-full bg-secondary-500 p-2 mr-[4rem] ">
+					<div className="rounded-full bg-secondary-500 p-2 mr-[1rem] ">
 						<RxHamburgerMenu
-							className="h-4 w-4 text-white"
+							className="h-4 w-4 text-white sm:h-3 sm:w-3"
 							onClick={() => setIsMenuToggled(!isMenuToggled)}
 						/>
 					</div>
@@ -67,7 +67,7 @@ const Navbar = () => {
 			{/* end of Navbar */}
 			{isAboveMediumScreens ? (
 				<section className="flex flex-row justify-between pb-6 relative">
-					<article className="text-white-400 absolute inset-y-[38%] left-[5.6%] w-[90%] md:w-auto ">
+					<article className="text-white-400 absolute inset-y-[38%] left-[5.6%]  w-[90%] md:w-auto ">
 						<h4 className="text-2xl md:text-sm lg:text-4xl  font-bold w-[60%]">
 							Embrace Your <span className="bg-[#E37619] px-1 ">Heritage,</span>{" "}
 							Enrich Your Connections
@@ -102,25 +102,27 @@ const Navbar = () => {
 				</section>
 			) : (
 				<section className="flex flex-row justify-between pb-6 relative">
-					<article className="flex flex-col justify-evenly text-white-400 absolute top-[20%]  md:top-[20%] sm:top-[10%] sm:left -auto left-[14.6%] justify-items-center ">
-						<h4 className="text-[16px] w-[60%] font-bold">
+					<article className="flex flex-col justify-evenly text-white-400 absolute top-[20%]  md:top-[20%] sm:top-[5vh] sm:left-[7] left-[14.6%] justify-items-center ">
+						<h4 className="text-[16px] w-[60%] font-bold sm:text-sm sm:pb-2">
 							Embrace Your{" "}
-							<span className="bg-[#E37619] px-1  ">Heritage,</span> Enrich Your
-							Connections
+							<span className="bg-[#E37619] px-1 sm:leading-6  ">
+								Heritage,
+							</span>{" "}
+							Enrich Your Connections
 						</h4>
-						<p className="md:text-[12px] leading-[1.5em]  md:py-2">
+						<p className="md:text-[12px] leading-[1.5em]  md:py-2 sm:text-xs sm:leading-6">
 							Journey through Time, Tradition, and <br />
 							Triumphs in the Heart of Itsekiri Culture.
 						</p>
-						<div className="flex flex-row gap-3 md:my-auto">
+						<div className="flex flex-row gap-3 md:my-auto sm:mt-4">
 							<Button
 								href=""
-								className="border-2 border-white-400 rounded-lg  shadow text-sm p-1">
+								className="border-2 border-white-400 rounded-lg  shadow text-sm p-1 sm:p-1 ">
 								Discover Your Roots
 							</Button>
 							<Button
 								href=""
-								className="bg-[#E37619] rounded-lg py-[2%] px-[5%] text-[14px] shadow border-0">
+								className="bg-[#E37619] rounded-lg py-[2%] px-[5%] text-[14px] shadow border-0 sm:p-1">
 								{" "}
 								Join Us Today
 							</Button>

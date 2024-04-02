@@ -16,8 +16,8 @@ const Membership = () => {
 				<div className="flex flex-col gap-4">
 					<img src={memberImage} alt="membershipImage" />
 					<div className="leading-[3rem]">
-						<h3>Membership and Benefits</h3>
-						<p className="leading-[2.5rem] my-[12px]">
+						<h3 className="font-bold text-2xl">Membership and Benefits</h3>
+						<p className="leading-[2.5rem] my-[12px] text-justify">
 							Embrace your Itsekiri heritage by joining our General Membership—a
 							community that welcomes every Itsekiri and friend of Itsekiri
 							culture. As a member, you'll engage in preserving and celebrating
