@@ -10,7 +10,7 @@ const NewsUpdates = () => {
 				<h4 className="text-[36px] text-[#E37619] font-bold sm:text-3xl">
 					News and Updates
 				</h4>
-				<p className="text-pretty w-1/2 sm:w-full">
+				<p className="text-pretty w-1/2 sm:w-full md:w-auto">
 					Stay updated with our latest endeavors, upcoming events, and impactful
 					stories from our members.
 				</p>
@@ -18,7 +18,7 @@ const NewsUpdates = () => {
 
 			<article>
 				{/* <p></p> */}
-				<div className="grid grid-cols-4 gap-4  justify-self-center mx-[5%] sm:flex sm:flex-col">
+				<div className="grid grid-cols-4 gap-4  justify-self-center mx-[5%] sm:flex sm:flex-col md:flex md:flex-col">
 					<ImageCard
 						src={news}
 						alt={"first"}

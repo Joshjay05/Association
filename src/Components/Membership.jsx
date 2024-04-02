@@ -11,7 +11,7 @@ const Membership = () => {
 			<h2 className="text-center text-[#E37619] text-[36px] my-6 font-bold">
 				Membership Information
 			</h2>
-			<article className="grid grid-cols-2 sm:flex sm:flex-col mx-[4%] gap-12">
+			<article className="grid grid-cols-2 sm:flex sm:flex-col md:flex md:flex-col mx-[4%] gap-12">
 				{/* left */}
 				<div className="flex flex-col gap-4">
 					<img src={memberImage} alt="membershipImage" />
@@ -29,7 +29,7 @@ const Membership = () => {
 							vibrancy of Itsekiri culture. Join us and enrich not just your own
 							life but the fabric of our entire community.
 						</p>
-						<Button className="bg-[#E37619] border text-white rounded-lg py-[24px] px-[16px] text-[16px]">
+						<Button className="bg-[#E37619] border text-white rounded-lg py-[24px] px-[16px] text-[16px] cursor-pointer">
 							Become a Member
 						</Button>
 					</div>

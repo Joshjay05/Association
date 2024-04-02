@@ -20,12 +20,12 @@ const Volunteer = () => {
 				</p>
 				<Button
 					// className="bg-[#E37619] border rounded-lg py-2 px-3"
-					className="bg-[#E37619] rounded-lg py-[18px] px-[20px] text-[16px] shadow border-0">
+					className="bg-[#E37619] rounded-lg py-[18px] px-[20px] text-[16px] shadow border-0 cursor-pointer">
 					Get Involved
 				</Button>
 			</div>
 			<div className="lg:absolute left-[60%] top-[-5.8%] sm:">
-				<img src={volImage} alt="banner" className="sm:hidden" />
+				<img src={volImage} alt="banner" className="sm:hidden md:hidden" />
 			</div>
 		</article>
 	);

@@ -72,16 +72,16 @@ const Events = () => {
 			{day && <All />}
 			{month && <All />}
 
-			<article className="flex flex-row  justify-around relative mt-[8rem] sm:flex-col-reverse ">
-				<div className="flex flex-col lg:absolute lg:top-[-6%] left-[5%] md:top-1  gap-4 ">
+			<article className="flex flex-row  justify-around relative mt-[8rem] sm:flex-col-reverse md:flex-col-reverse ">
+				<div className="flex flex-col lg:absolute md:flex  lg:top-[-6%] left-[5%] md:top-1  gap-4 ">
 					<img
 						src={secretary}
 						alt="secretary"
-						className=" items-center  md:h-[48vh] md:w-[80%] "
+						className=" items-center  md:h-[48vh] md:w-[100%] "
 					/>
-					<p className="sm:px-5">Tsolaye Dorsu - Secretary</p>
+					<p className="sm:px-5 md:px-5">Tsolaye Dorsu - Secretary</p>
 				</div>
-				<div className="flex flex-col gap-4  bg-[#2D2735] lg:w-[54%] md:w-[50%] lg:ml-[35%] md:ml-[8rem] py-[2%] px-[10%]  md:px-6 text-justify leading-[2rem] sm:w-full sm:py-10">
+				<div className="flex flex-col gap-4  bg-[#2D2735] lg:w-[54%]  lg:ml-[35%] md:w-full py-[2%] px-[10%]  md:px-6 text-justify leading-[2rem] sm:w-full sm:py-10">
 					<h3 className="text-[#E37619] text-[36px] font-bold md:text-lg sm:text-base">
 						Community Engagement
 					</h3>

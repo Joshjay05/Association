@@ -8,7 +8,7 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (
 		<footer className="bg-[#2D2735] text-white py-6 px-12 mt-[8rem]">
-			<section className="flex flex-row  sm:flex-col ">
+			<section className="flex flex-row  md:flex-col sm:flex-col ">
 				<article className=" sm:pb-6">
 					<img src={logo} alt="" />
 					<div className="flex flex-row gap-3 mt-8">
@@ -26,7 +26,7 @@ const Footer = () => {
 						</a>
 					</div>
 				</article>
-				<article className=" flex flex-row ml-[15%] gap-[8rem] sm:flex-wrap sm:ml-0 sm:pt-10">
+				<article className=" flex flex-row ml-[15%] gap-[8rem] md:flex-wrap  md:pt-10 sm:flex-wrap sm:ml-0 sm:pt-10">
 					<ul className="list-none flex flex-col gap-8">
 						<p>Links</p>
 						<li>About Us</li>
@@ -52,7 +52,7 @@ const Footer = () => {
 								type="text"
 								className="py-[8px] px-[16%] rounded-xl text-black "
 							/>
-							<Button className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%] sm:ml-1">
+							<Button className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%] sm:ml-1 cursor-pointer">
 								Subscribe
 							</Button>
 						</li>
@@ -68,7 +68,7 @@ const Footer = () => {
 					<p className="sm:text-sm">Terms and Conditions</p>
 					<p className="sm:text-sm"> Privacy Policy</p>
 				</article>
-				<article className="ml-[42%] sm:ml-1 sm:pt-8 sm:text-sm">
+				<article className="ml-[42%] md:ml-1 sm:ml-1 sm:pt-8 sm:text-sm">
 					© {currentYear} Itsekiri Association of Chicago . All rights
 					reserved.
 				</article>

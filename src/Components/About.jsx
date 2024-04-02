@@ -69,7 +69,7 @@ const About = () => {
 							/>
 						</span>
 						<div style={{ marginBlock: "30px" }}>
-							<Button className="bg-[#E37619] border rounded-lg py-[24px] px-[12px] text-white text-[16px] ml-3 mt-6">
+							<Button className="bg-[#E37619] border rounded-lg py-[24px] px-[12px] text-white text-[16px] ml-3 mt-6 cursor-pointer">
 								Join Our Community Today
 							</Button>
 						</div>
