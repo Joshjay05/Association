@@ -16,11 +16,11 @@ const Events = () => {
 				Upcoming Events
 			</h1>
 			<h6 className="mx-[6%] my-3">Browsing Events</h6>
-			<div className="flex flex-row gap-4 mx-[6%] my-3">
+			<div className="flex flex-row gap-4 sm:gap-1 mx-[6%] my-3 sm:text-sm md:text-base">
 				<span
 					className={`cursor-pointer   ${
 						all ? "border-b-2 text-[#E37619]" : "bg-gray-200 text-gray-50"
-					} mr-2`}
+					} mr-2 sm:text-sm`}
 					onClick={() => {
 						setAll(true);
 						setDay(false);
@@ -72,17 +72,23 @@ const Events = () => {
 			{day && <All />}
 			{month && <All />}
 
-			<article className="flex flex-row justify-around relative mt-[8rem] ">
-				<div className="flex flex-col  absolute top-[-6%] left-[5%] gap-4">
-					<img src={secretary} alt="secretary" className=" items-center " />
-					<p className="">Tsolaye Dorsu - Secretary</p>
+			<article className="flex flex-row  justify-around relative mt-[8rem] sm:flex-col-reverse ">
+				<div className="flex flex-col lg:absolute lg:top-[-6%] left-[5%] md:top-1  gap-4 ">
+					<img
+						src={secretary}
+						alt="secretary"
+						className=" items-center  md:h-[48vh] md:w-[80%] "
+					/>
+					<p className="sm:px-5">Tsolaye Dorsu - Secretary</p>
 				</div>
-				<div className="flex flex-col gap-4  bg-[#2D2735] w-[54%]  ml-[35%] py-[2%] px-[10%] text-justify leading-[2rem]">
-					<h3 className="text-[#E37619] text-[36px] font-bold">
+				<div className="flex flex-col gap-4  bg-[#2D2735] lg:w-[54%] md:w-[50%] lg:ml-[35%] md:ml-[8rem] py-[2%] px-[10%]  md:px-6 text-justify leading-[2rem] sm:w-full sm:py-10">
+					<h3 className="text-[#E37619] text-[36px] font-bold md:text-lg sm:text-base">
 						Community Engagement
 					</h3>
-					<h5 className="text-white text-[24px]">Member Spotlight</h5>
-					<p className="text-sm/[18px] text-white leading-[2.5rem]">
+					<h5 className="text-white text-[24px] sm:text-sm">
+						Member Spotlight
+					</h5>
+					<p className="lg:text-sm/[18px] text-white lg:leading-[2.5rem] md:leading-[1.5rem] md:text-sm sm:leading-[1.8rem] sm:text-xs sm:text-justify">
 						We honor Tsolaye, whose remarkable dedication to education led our
 						successful 'Back to School Drive'. Tsolaye's efforts ensured that
 						dozens of children in Warri community were equipped with the

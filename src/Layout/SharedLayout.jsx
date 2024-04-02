@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 
 const SharedLayout = () => {
 	return (
-		<div>
+		<div className="w-full">
 			<Navbar />
 			<Outlet />
 			<Footer />

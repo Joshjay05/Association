@@ -8,8 +8,8 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (
 		<footer className="bg-[#2D2735] text-white py-6 px-12 mt-[8rem]">
-			<section className="flex flex-row  ">
-				<article className="">
+			<section className="flex flex-row  sm:flex-col ">
+				<article className=" sm:pb-6">
 					<img src={logo} alt="" />
 					<div className="flex flex-row gap-3 mt-8">
 						<a href="" className="bg-[#f5f5f5] p-[4px] rounded-xl">
@@ -26,7 +26,7 @@ const Footer = () => {
 						</a>
 					</div>
 				</article>
-				<article className=" flex flex-row ml-[15%] gap-[8rem]">
+				<article className=" flex flex-row ml-[15%] gap-[8rem] sm:flex-wrap sm:ml-0 sm:pt-10">
 					<ul className="list-none flex flex-col gap-8">
 						<p>Links</p>
 						<li>About Us</li>
@@ -41,34 +41,34 @@ const Footer = () => {
 						<li>FAQ</li>
 					</ul>
 
-					<ul className="list-none flex flex-col gap-6">
+					<ul className="list-none flex flex-col gap-6 sm:gap-3">
 						<h4>Subscribe</h4>
-						<p>
+						<p className="sm:text-sm">
 							Subscribe to our newsletter for monthly insights, stories,
 							opportunities to engage with the Itsekiri community.
 						</p>
-						<li className="flex flex-row ">
+						<li className="flex flex-row  sm:flex-col sm:gap-4">
 							<input
 								type="text"
 								className="py-[8px] px-[16%] rounded-xl text-black "
 							/>
-							<Button className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%]">
+							<Button className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%] sm:ml-1">
 								Subscribe
 							</Button>
 						</li>
-						<p>
+						<p className="sm:text-sm">
 							By subscribing you agree to with our Privacy Policy and provide
 							consent to receive updates from our company.
 						</p>
 					</ul>
 				</article>
 			</section>
-			<section className="flex flex-row mt-[60px]">
+			<section className="flex flex-row mt-[60px] sm:flex-col">
 				<article className="flex flex-row gap-4">
-					<p>Terms and Conditions</p>
-					<p>Privacy Policy</p>
+					<p className="sm:text-sm">Terms and Conditions</p>
+					<p className="sm:text-sm"> Privacy Policy</p>
 				</article>
-				<article className="ml-[42%]">
+				<article className="ml-[42%] sm:ml-1 sm:pt-8 sm:text-sm">
 					© {currentYear} Itsekiri Association of Chicago . All rights
 					reserved.
 				</article>

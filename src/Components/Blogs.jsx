@@ -12,7 +12,7 @@ const Blogs = () => {
 			<h4 className="text-center text-[36px] text-[#E37619] font-bold">
 				Our Blogs
 			</h4>
-			<article className="flex flex-row justify-center gap-4 mb-[12rem]">
+			<article className="flex flex-row justify-center gap-4 mb-[5rem] sm:flex-col sm:items-center">
 				<BlogCard
 					src={blogone}
 					alt={""}
@@ -40,16 +40,16 @@ const Blogs = () => {
 				/>
 			</article>
 
-			<article className=" flex flex-row items-center justify-between ml-[50%]">
+			<article className=" flex flex-row items-center justify-between ml-[50%] sm:flex-col sm:ml-0 sm:gap-6">
 				<div className="flex flex-col justify-center self-center items-center">
 					<Button className="bg-[#E37619] border rounded-lg py-[18px] px-[24px] text-[16px] text-white ">
 						View More Blogs
 					</Button>
 				</div>
 
-				<div className="flex flex-row items-center gap-2 mr-[8%]">
-					<img src={arrowleft} alt="arrow" className="w-12 h-12" />
+				<div className="flex flex-row items-center gap-2 lg:mr-[8%] sm:mr-[5%] sm:justify-between">
 					<img src={arrowright} alt="arrow" className="w-12 h-12 " />
+					<img src={arrowleft} alt="arrow" className="w-12 h-12" />
 				</div>
 			</article>
 		</section>

@@ -5,12 +5,12 @@ export default {
   theme: {
      screens: {
 
-      'md': {'max': '767px'},
+      'md': {'min': '640px', 'max': '1024px'},
       // => @media (max-width: 767px) { ... }
 
-      'sm': {'max': '639px'},
+      'sm': {'max': '640px'},
      
-      'lg': '1024px',
+      'lg': {'min':'1024px'},
       // => @media (min-width: 1024px) { ... }
 
       'xl': '1280px',

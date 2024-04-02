@@ -5,11 +5,19 @@
   @tailwind components;
   @tailwind utilities;
 
-  
-html,body,.app{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body,html{
   height: 100%;
   width: 100%;
  font-family: "Montserrat", sans-serif;
+   overflow-x: hidden;
   /* font-weight: 100; */
   /* @apply text-gray-500 */
   }
+  /* body{
+    overflow-x: hidden;
+  } */

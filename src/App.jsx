@@ -4,7 +4,7 @@ import LandingPage from "./LandingPage";
 
 const App = () => {
 	return (
-		<div>
+		<div className="w-full">
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<SharedLayout />}>

@@ -11,7 +11,7 @@ const Membership = () => {
 			<h2 className="text-center text-[#E37619] text-[36px] my-6 font-bold">
 				Membership Information
 			</h2>
-			<article className="grid grid-cols-2 mx-[4%] gap-12">
+			<article className="grid grid-cols-2 sm:flex sm:flex-col mx-[4%] gap-12">
 				{/* left */}
 				<div className="flex flex-col gap-4">
 					<img src={memberImage} alt="membershipImage" />
