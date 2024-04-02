@@ -10,7 +10,7 @@ export default {
 
       'sm': {'max': '639px'},
      
-      'lg': {'min':'1024px'},
+      'lg': {'min':'1025px'},
       // => @media (min-width: 1024px) { ... }
 
       'xl': '1280px',

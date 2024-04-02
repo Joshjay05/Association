@@ -12,10 +12,12 @@ const Events = () => {
 
 	return (
 		<section>
-			<h1 className="text-center text-[#E37619] text-[36px] font-bold">
+			<h1 className="text-center text-[#E37619] md:text-xl text-[36px] font-bold">
 				Upcoming Events
 			</h1>
-			<h6 className="mx-[6%] my-3">Browsing Events</h6>
+			<h6 className="mx-[6%] my-3 lg:text-2xl font-bold md:text-base">
+				Browsing Events
+			</h6>
 			<div className="flex flex-row gap-4 sm:gap-1 mx-[6%] my-3 sm:text-sm md:text-base">
 				<span
 					className={`cursor-pointer   ${
@@ -77,11 +79,11 @@ const Events = () => {
 					<img
 						src={secretary}
 						alt="secretary"
-						className=" items-center  md:h-[48vh] md:w-[100%] "
+						className=" items-center  md:h-[48vh] md:w-[100%]lg "
 					/>
 					<p className="sm:px-5 md:px-5">Tsolaye Dorsu - Secretary</p>
 				</div>
-				<div className="flex flex-col gap-4  bg-[#2D2735] lg:w-[54%]  lg:ml-[35%] md:w-full py-[2%] px-[10%]  md:px-6 text-justify leading-[2rem] sm:w-full sm:py-10">
+				<div className="flex flex-col gap-4  bg-[#2D2735] lg:w-[54%]  lg:ml-[35%] md:w-full md:h-full py-[2%] px-[10%]  md:px-6 text-justify leading-[2rem] sm:w-full sm:py-10">
 					<h3 className="text-[#E37619] text-[36px] font-bold md:text-lg sm:text-base">
 						Community Engagement
 					</h3>

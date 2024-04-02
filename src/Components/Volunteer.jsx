@@ -6,7 +6,8 @@ import volImage from "../assets/banner.png";
 const Volunteer = () => {
 	return (
 		<article
-			className="mt-[8rem] lg:grid grid-cols-2  sm: flex sm:flex-row-reverse justify-self-center bg-cover bg-center relative "
+			id="volunteer"
+			className="mt-[8rem] lg:grid grid-cols-2 md:flex-col-reverse  sm: flex sm:flex-row-reverse justify-self-center bg-cover bg-center relative "
 			style={{ backgroundImage: `url(${backgroundImage})` }}>
 			<div className="text-white leading-[5rem] py-[10%] lg:pl-[12%] sm:w-full px-4">
 				<h4>Volunteer Opportunities</h4>
@@ -25,7 +26,11 @@ const Volunteer = () => {
 				</Button>
 			</div>
 			<div className="lg:absolute left-[60%] top-[-5.8%] sm:">
-				<img src={volImage} alt="banner" className="sm:hidden md:hidden" />
+				<img
+					src={volImage}
+					alt="banner"
+					className="sm:hidden md:hidden lg:h-[79vh]"
+				/>
 			</div>
 		</article>
 	);

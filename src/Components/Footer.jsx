@@ -7,7 +7,9 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (
-		<footer className="bg-[#2D2735] text-white py-6 px-12 mt-[8rem]">
+		<footer
+			id="contact"
+			className="bg-[#2D2735] text-white py-6 px-12 mt-[8rem]">
 			<section className="flex flex-row  md:flex-col sm:flex-col ">
 				<article className=" sm:pb-6">
 					<img src={logo} alt="" />

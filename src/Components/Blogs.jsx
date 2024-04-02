@@ -40,7 +40,7 @@ const Blogs = () => {
 				/>
 			</article>
 
-			<article className=" flex flex-row items-center justify-between ml-[50%] md:flex-col md:ml-0 md:gap-6 sm:flex-col sm:ml-0 sm:gap-6">
+			<article className=" flex flex-row items-center justify-between ml-[50%] lg:mt-28 md:flex-col md:ml-0 md:gap-6 sm:flex-col sm:ml-0 sm:gap-6">
 				<div className="flex flex-col justify-center self-center items-center">
 					<Button className="bg-[#E37619] border rounded-lg py-[18px] px-[24px] text-[16px] text-white cursor-pointer ">
 						View More Blogs

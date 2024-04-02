@@ -7,21 +7,23 @@ import play from "../assets/play.png";
 // import ReactPlayer from "react-player";
 const About = () => {
 	return (
-		<main className="my-[8rem] flex flex-col justify-center items-center px-[6%] gap-6">
+		<main
+			id="about"
+			className="my-[8rem] flex flex-col justify-center items-center px-[6%] gap-6">
 			{/* top section */}
-			<article className="flex flex-row justify-between md:flex-col sm:grid sm:grid-flow-row gap-4">
+			<article className="flex flex-row  items-center justify-between md:flex-col sm:grid sm:grid-flow-row gap-4">
 				<div className="flex flex-col w-1/2  md:w-full sm:w-full gap-4 justify-center my-[4rem]">
 					<h4 className="text-[36px] text-[#E37619] sm:text-[28px]">
 						About The Association
 					</h4>
-					<p className="text-lg leading-[2.3rem] text-justify">
+					<p className="text-lg leading-[2rem] text-justify">
 						At the heart of Chicago, the Itsekiri Association is dedicated to
 						preserving and promoting the rich Itsekiri culture and traditions.
 						As Itsekiris in the USA, we unite to celebrate our heritage, connect
 						with our roots, and contribute positively to our community in
 						Nigeria and beyond.
 					</p>
-					<p className="text-lg leading-[3rem] text-justify ">
+					<p className="text-lg leading-[1.5rem] text-justify ">
 						Dive into our story with a video showcasing our vibrant community
 						events, cultural workshops, and contributions to our homeland,
 						encapsulating our journey and impact.

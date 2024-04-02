@@ -20,11 +20,11 @@ const Navbar = () => {
 				{isAboveMediumScreens ? (
 					<article className="flex flex-row gap-4 items-center mr-[6rem] ">
 						<div className="flex flex-row justify-between text-white text-[16px] gap-6 ">
-							<a href="">About Us</a>
+							<a href="#about">About Us</a>
 							<a href="">Culture</a>
-							<a href="">Gallery</a>
-							<a href="">Volunteer</a>
-							<a href="">Contact</a>
+							<a href="#gallery">Gallery</a>
+							<a href="#volunteer">Volunteer</a>
+							<a href="#contact">Contact</a>
 						</div>
 
 						<Button
