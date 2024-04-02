@@ -9,7 +9,9 @@ import arrowright from "../assets/rightarrow.png";
 const Blogs = () => {
 	return (
 		<section className="flex flex-col gap-4 h-full">
-			<h4 className="text-center">Our Blogs</h4>
+			<h4 className="text-center text-[36px] text-[#E37619] font-bold">
+				Our Blogs
+			</h4>
 			<article className="flex flex-row justify-center gap-4 mb-[12rem]">
 				<BlogCard
 					src={blogone}

@@ -7,8 +7,10 @@ const NewsUpdates = () => {
 	return (
 		<section className="my-[6rem]">
 			<article className=" flex flex-col gap-2 mx-[5%] my-3">
-				<h4 className="text-[36px] text-[#E37619]">News and Updates</h4>
-				<p className="text-pretty">
+				<h4 className="text-[36px] text-[#E37619] font-bold">
+					News and Updates
+				</h4>
+				<p className="text-pretty w-1/2">
 					Stay updated with our latest endeavors, upcoming events, and impactful
 					stories from our members.
 				</p>

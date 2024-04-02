@@ -7,10 +7,10 @@ import play from "../assets/play.png";
 // import ReactPlayer from "react-player";
 const About = () => {
 	return (
-		<main className="mt-[50px] flex flex-col justify-center items-center px-[6%] gap-6">
+		<main className="my-[8rem] flex flex-col justify-center items-center px-[6%] gap-6">
 			{/* top section */}
 			<article className="flex flex-row justify-between gap-4">
-				<div className="flex flex-col w-1/2 gap-4 justify-center">
+				<div className="flex flex-col w-1/2 gap-4 justify-center my-[4rem]">
 					<h4 className="text-[36px] text-[#E37619]">About The Association</h4>
 					<p className="text-lg leading-[2.3rem]">
 						At the heart of Chicago, the Itsekiri Association is dedicated to
@@ -45,7 +45,7 @@ const About = () => {
 				</h4>
 				<article className="flex flex-row justify-between gap-8">
 					<div className="w-1/2">
-						<img src={abt} alt="about-us" className="h-[70%] w-[90%]" />
+						<img src={abt} alt="about-us" />
 					</div>
 					<div className=" w-1/2">
 						<span className="">
@@ -70,7 +70,7 @@ const About = () => {
 								text="Being part of the Itsekiri Association of Chicago has given me a sense of belonging and an opportunity to contribute to our homeland's development. It's a powerful connection to our roots.-A satisfied member. "
 							/>
 						</span>
-						<div className="my-[20px]">
+						<div style={{ marginBlock: "30px" }}>
 							<Button className="bg-[#E37619] border rounded-lg py-[24px] px-[12px] text-white text-[16px] ml-3 mt-6">
 								Join Our Community Today
 							</Button>
