@@ -19,11 +19,12 @@ const Navbar = () => {
 						<a href="">Volunteer</a>
 						<a href="">Contact</a>
 					</div>
-					<div className="bg-[#E37619] rounded-md p-1">
-						<Button href="" className="text-white">
-							Join Us Today
-						</Button>
-					</div>
+
+					<Button
+						href=""
+						className="bg-[#E37619] rounded-md py-[16px] px-[24px] border-0 border-transparent shadow text-white">
+						Join Us Today
+					</Button>
 				</article>
 			</nav>
 			{/* end of Navbar */}
@@ -40,12 +41,12 @@ const Navbar = () => {
 					<div className="flex flex-row gap-3">
 						<Button
 							href=""
-							className="border-2 border-white-400 rounded-lg p-[8px]">
+							className="border-2 border-white-400 rounded-lg py-[16px] px-[24px] shadow">
 							Discover Your Roots
 						</Button>
 						<Button
 							href=""
-							className="bg-[#E37619] border rounded-lg py-[8px] px-[10px] text-[16px]">
+							className="bg-[#E37619] rounded-lg py-[18px] px-[20px] text-[16px] shadow border-0">
 							{" "}
 							Join Us Today
 						</Button>

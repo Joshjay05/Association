@@ -3,12 +3,14 @@ import Button from "../Reusable/Button";
 import blogone from "../assets/blogone.png";
 import blogtwo from "../assets/blogtwo.png";
 import blogthree from "../assets/blogthree.png";
+import arrowleft from "../assets/arrowleft.png";
+import arrowright from "../assets/rightarrow.png";
 
 const Blogs = () => {
 	return (
-		<section>
-			<h4>Our Blogs</h4>
-			<article className="flex flex-row justify-center gap-4">
+		<section className="flex flex-col gap-4 h-full">
+			<h4 className="text-center">Our Blogs</h4>
+			<article className="flex flex-row justify-center gap-4 mb-[12rem]">
 				<BlogCard
 					src={blogone}
 					alt={""}
@@ -19,7 +21,7 @@ const Blogs = () => {
 				<BlogCard
 					src={blogtwo}
 					alt={""}
-					title={"Itsekiri Legends and Folktales: Stories That Define Us"}
+					title="Itsekiri Legends and Folktales: Stories That Define Us"
 					text={
 						"Showcase the oral traditions of the Itsekiri community by exploring and retelling age-old legends and folktales."
 					}
@@ -36,12 +38,17 @@ const Blogs = () => {
 				/>
 			</article>
 
-			<article>
-				<div>
-					<Button>View More Blogs</Button>
+			<article className=" flex flex-row items-center justify-between ml-[50%]">
+				<div className="flex flex-col justify-center self-center items-center">
+					<Button className="bg-[#E37619] border rounded-lg py-[18px] px-[24px] text-[16px] text-white ">
+						View More Blogs
+					</Button>
 				</div>
 
-				<div></div>
+				<div className="flex flex-row items-center gap-2 mr-[8%]">
+					<img src={arrowleft} alt="arrow" className="w-12 h-12" />
+					<img src={arrowright} alt="arrow" className="w-12 h-12 " />
+				</div>
 			</article>
 		</section>
 	);
