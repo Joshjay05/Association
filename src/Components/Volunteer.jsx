@@ -6,9 +6,9 @@ import volImage from "../assets/banner.png";
 const Volunteer = () => {
 	return (
 		<article
-			className="mt-[8rem] grid grid-cols-2 justify-self-center bg-cover bg-center h-[60vh] relative "
+			className="mt-[8rem] grid grid-cols-2 justify-self-center bg-cover bg-center relative "
 			style={{ backgroundImage: `url(${backgroundImage})` }}>
-			<div className="text-white leading-[5rem] py-[12%] pl-[12%]">
+			<div className="text-white leading-[5rem] py-[10%] pl-[12%]">
 				<h4>Volunteer Opportunities</h4>
 				<p className="leading-[2.5rem] text-justify">
 					Join us in organizing the much-anticipated Ugbajo Convention this
@@ -18,12 +18,14 @@ const Volunteer = () => {
 					our commitment to Itsekiri unity and welfare. Come, lend your hands
 					and hearts, and be part of this incredible journey.
 				</p>
-				<Button className="bg-[#E37619] border rounded-lg py-2 px-3">
+				<Button
+					// className="bg-[#E37619] border rounded-lg py-2 px-3"
+					className="bg-[#E37619] rounded-lg py-[18px] px-[20px] text-[16px] shadow border-0">
 					Get Involved
 				</Button>
 			</div>
-			<div className="absolute left-[60%] top-[-18%]">
-				<img src={volImage} alt="banner" className="h-[71vh]" />
+			<div className="absolute left-[60%] top-[-5.8%]">
+				<img src={volImage} alt="banner" className="" />
 			</div>
 		</article>
 	);

@@ -48,7 +48,10 @@ const Footer = () => {
 							opportunities to engage with the Itsekiri community.
 						</p>
 						<li className="flex flex-row ">
-							<input type="text" className="py-[8px] px-[16%] rounded-xl " />{" "}
+							<input
+								type="text"
+								className="py-[8px] px-[16%] rounded-xl text-black "
+							/>
 							<Button className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%]">
 								Subscribe
 							</Button>

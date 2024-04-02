@@ -3,37 +3,44 @@ import thum from "../assets/poster.png";
 import abt from "../assets/About.png";
 import AboutCard from "../Reusable/AboutCard";
 import Button from "../Reusable/Button";
+import play from "../assets/play.png";
 // import ReactPlayer from "react-player";
 const About = () => {
 	return (
 		<main className="mt-[50px] flex flex-col justify-center items-center px-[6%] gap-6">
 			{/* top section */}
-			<article className="flex flex-row justify-between">
-				<div className="flex flex-col w-1/2 gap-4">
-					<h4 className="">About The Association</h4>
-					<p className="text-lg">
+			<article className="flex flex-row justify-between gap-4">
+				<div className="flex flex-col w-1/2 gap-4 justify-center">
+					<h4 className="text-[36px] text-[#E37619]">About The Association</h4>
+					<p className="text-lg leading-[2.3rem]">
 						At the heart of Chicago, the Itsekiri Association is dedicated to
 						preserving and promoting the rich Itsekiri culture and traditions.
 						As Itsekiris in the USA, we unite to celebrate our heritage, connect
 						with our roots, and contribute positively to our community in
 						Nigeria and beyond.
 					</p>
-					<p className="text-lg">
+					<p className="text-lg leading-[3rem] ">
 						Dive into our story with a video showcasing our vibrant community
 						events, cultural workshops, and contributions to our homeland,
 						encapsulating our journey and impact.
 					</p>
 				</div>
-				<div>
-					<video controls poster={thum} width="600">
+				<div className="relative">
+					<img src={thum} alt="" className="relative" />
+					<img
+						src={play}
+						alt=""
+						className="absolute top-[40%] left-[40%] h-[20%] shadow"
+					/>
+					{/* <video controls poster={thum} width="600">
 						<source src="/path/to/video.mp4" type="video/mp4" />
 						Your browser does not support the video tag.
-					</video>
+					</video> */}
 				</div>
 			</article>
 			{/* bottom section */}
 			<section>
-				<h4 className="text-[#E37619] text-2xl my-4 ml-[51%]">
+				<h4 className="text-[#E37619] text-[36px] my-4 ml-[51%]">
 					Why Join Our Community?
 				</h4>
 				<article className="flex flex-row justify-between gap-8">
@@ -64,7 +71,7 @@ const About = () => {
 							/>
 						</span>
 						<div className="my-[20px]">
-							<Button className="bg-[#E37619] border rounded-lg py-[8px] px-[10px] text-white text-[16px] ml-3 mt-6">
+							<Button className="bg-[#E37619] border rounded-lg py-[24px] px-[12px] text-white text-[16px] ml-3 mt-6">
 								Join Our Community Today
 							</Button>
 						</div>

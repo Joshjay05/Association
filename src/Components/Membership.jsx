@@ -8,7 +8,7 @@ import memberImage from "../assets/membership.png";
 const Membership = () => {
 	return (
 		<section>
-			<h2 className="text-center text-[#E37619] text-[36px] my-6">
+			<h2 className="text-center text-[#E37619] text-[36px] my-6 font-bold">
 				Membership Information
 			</h2>
 			<article className="grid grid-cols-2 mx-[4%] gap-12">
@@ -29,7 +29,7 @@ const Membership = () => {
 							vibrancy of Itsekiri culture. Join us and enrich not just your own
 							life but the fabric of our entire community.
 						</p>
-						<Button className="bg-[#E37619] border text-white rounded-lg py-[12px] px-[10px] text-[16px]">
+						<Button className="bg-[#E37619] border text-white rounded-lg py-[24px] px-[16px] text-[16px]">
 							Become a Member
 						</Button>
 					</div>

@@ -12,7 +12,7 @@ const Events = () => {
 
 	return (
 		<section>
-			<h1 className="text-center text-[##E37619] text-2xl font-bold">
+			<h1 className="text-center text-[#E37619] text-[36px] font-bold">
 				Upcoming Events
 			</h1>
 			<h6 className="mx-[6%] my-3">Browsing Events</h6>
@@ -73,11 +73,11 @@ const Events = () => {
 			{month && <All />}
 
 			<article className="flex flex-row justify-around relative mt-[8rem] ">
-				<div className="flex flex-col  absolute top-[-10%] left-[5%] gap-1">
+				<div className="flex flex-col  absolute top-[-6%] left-[5%] gap-4">
 					<img src={secretary} alt="secretary" className=" items-center " />
 					<p className="">Tsolaye Dorsu - Secretary</p>
 				</div>
-				<div className="flex flex-col gap-4  bg-[#2D2735] w-[54%]  h-[52vh] ml-[35%] py-[2%] px-[10%] text-justify leading-[2rem]">
+				<div className="flex flex-col gap-4  bg-[#2D2735] w-[54%]  ml-[35%] py-[2%] px-[10%] text-justify leading-[2rem]">
 					<h3 className="text-[#E37619] text-[36px] font-bold">
 						Community Engagement
 					</h3>

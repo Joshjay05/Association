@@ -12,7 +12,7 @@ const Navbar = () => {
 					<img src={logo} alt="logo" />
 				</article>
 				<article className="flex flex-row gap-4 items-center ml-[35%]">
-					<div className="flex flex-row justify-between text-white text-lg gap-6 ">
+					<div className="flex flex-row justify-between text-white text-[16px] gap-6 ">
 						<a href="">About Us</a>
 						<a href="">Culture</a>
 						<a href="">Gallery</a>
@@ -22,7 +22,7 @@ const Navbar = () => {
 
 					<Button
 						href=""
-						className="bg-[#E37619] rounded-md py-[16px] px-[24px] border-0 border-transparent shadow text-white">
+						className="bg-[#E37619] rounded-md py-[14px] px-[20px] border-0 border-transparent shadow text-white">
 						Join Us Today
 					</Button>
 				</article>
@@ -30,11 +30,11 @@ const Navbar = () => {
 			{/* end of Navbar */}
 			<section className="flex flex-row justify-between pb-6 relative">
 				<article className=" text-white-400 absolute inset-y-[38%] left-[5.6%] ">
-					<h4 className="text-4xl w-[60%] font-bold">
+					<h4 className="text-[43px] w-[60%] font-bold">
 						Embrace Your <span className="bg-[#E37619] px-1 ">Heritage,</span>{" "}
 						Enrich Your Connections
 					</h4>
-					<p className="text-[17px leading-[27px] w-[40%] tracking-[.05em] py-3">
+					<p className="text-[17px leading-[27px] w-[40%] tracking-[.03em] py-3">
 						Journey through Time, Tradition, and <br />
 						Triumphs in the Heart of Itsekiri Culture.
 					</p>
