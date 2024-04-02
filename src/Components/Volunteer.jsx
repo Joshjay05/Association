@@ -2,6 +2,7 @@
 import Button from "../Reusable/Button";
 import backgroundImage from "../assets/vol.png";
 import volImage from "../assets/banner.png";
+// import Membership from "./Membership";
 const Volunteer = () => {
 	return (
 		<article
@@ -17,7 +18,7 @@ const Volunteer = () => {
 					our commitment to Itsekiri unity and welfare. Come, lend your hands
 					and hearts, and be part of this incredible journey.
 				</p>
-				<Button className="bg-[#e3761a] border rounded-lg py-2 px-3">
+				<Button className="bg-[#E37619] border rounded-lg py-2 px-3">
 					Get Involved
 				</Button>
 			</div>

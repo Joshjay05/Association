@@ -19,7 +19,7 @@ const Navbar = () => {
 						<a href="">Volunteer</a>
 						<a href="">Contact</a>
 					</div>
-					<div className="bg-[#e3761a] rounded-md p-1">
+					<div className="bg-[#E37619] rounded-md p-1">
 						<Button href="" className="text-white">
 							Join Us Today
 						</Button>
@@ -30,7 +30,7 @@ const Navbar = () => {
 			<section className="flex flex-row justify-between pb-6 relative">
 				<article className=" text-white-400 absolute inset-y-[38%] left-[5.6%] ">
 					<h4 className="text-4xl w-[60%] font-bold">
-						Embrace Your <span className="bg-[#e3761a] px-1 ">Heritage,</span>{" "}
+						Embrace Your <span className="bg-[#E37619] px-1 ">Heritage,</span>{" "}
 						Enrich Your Connections
 					</h4>
 					<p className="text-[17px leading-[27px] w-[40%] tracking-[.05em] py-3">
@@ -45,7 +45,7 @@ const Navbar = () => {
 						</Button>
 						<Button
 							href=""
-							className="bg-[#e3761a] border rounded-lg py-[8px] px-[10px] text-[16px]">
+							className="bg-[#E37619] border rounded-lg py-[8px] px-[10px] text-[16px]">
 							{" "}
 							Join Us Today
 						</Button>

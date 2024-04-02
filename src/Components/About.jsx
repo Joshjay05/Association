@@ -33,7 +33,7 @@ const About = () => {
 			</article>
 			{/* bottom section */}
 			<section>
-				<h4 className="text-[#e3761a] text-2xl my-4 ml-[51%]">
+				<h4 className="text-[#E37619] text-2xl my-4 ml-[51%]">
 					Why Join Our Community?
 				</h4>
 				<article className="flex flex-row justify-between gap-8">
@@ -50,7 +50,7 @@ const About = () => {
 							<AboutCard
 								number="02"
 								title="Professional Development"
-								text="CAttend our monthly gatherings that contribute to your personal and professional growth. "
+								text="Attend our monthly gatherings that contribute to your personal and professional growth. "
 							/>
 							<AboutCard
 								number="03"
@@ -64,7 +64,7 @@ const About = () => {
 							/>
 						</span>
 						<div className="my-[20px]">
-							<Button className="bg-[#e3761a] border rounded-lg py-[8px] px-[10px] text-white text-[16px] ml-3 mt-6">
+							<Button className="bg-[#E37619] border rounded-lg py-[8px] px-[10px] text-white text-[16px] ml-3 mt-6">
 								Join Our Community Today
 							</Button>
 						</div>

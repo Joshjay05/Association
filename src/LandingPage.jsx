@@ -1,7 +1,10 @@
 // import React from 'react'
 
 import About from "./Components/About";
+import Blogs from "./Components/Blogs";
 import Events from "./Components/Events";
+import Membership from "./Components/Membership";
+import NewsUpdates from "./Components/NewsUpdates";
 import Volunteer from "./Components/Volunteer";
 
 const LandingPage = () => {
@@ -10,6 +13,9 @@ const LandingPage = () => {
 			<About />
 			<Events />
 			<Volunteer />
+			<Membership />
+			<NewsUpdates />
+			<Blogs />
 		</div>
 	);
 };
