@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // import React from 'react'
 import secretary from "../assets/secretary.png";
 import { useState } from "react";
@@ -88,7 +89,7 @@ const Events = () => {
 						necessary school supplies and resources to start their academic year
 						on the right foot. This initiative reflects the heart of our
 						Itsekiri values — supporting each other in educational pursuits and
-						community well-being..  
+						community well-being..
 					</p>
 				</div>
 			</article>
