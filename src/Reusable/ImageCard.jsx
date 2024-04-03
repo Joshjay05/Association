@@ -15,7 +15,7 @@ const ImageCard = ({
 			<div className="flex flex-col gap-[8px] py-2">
 				<p>{title}</p>
 				<p className=" font-bold">{otherTitle}</p>
-				<p className="text-pretty wrap px-[4%]">{Description}</p>
+				<p className="text-pretty text-lg wrap px-[4%]">{Description}</p>
 				<p className="text-gray-50 w-[80%]">{text}</p>
 				<p className="py-1">{time}</p>
 			</div>
