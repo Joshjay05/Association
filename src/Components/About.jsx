@@ -50,22 +50,22 @@ const About = () => {
 					<div className=" w-1/2 md:w-full sm:w-full">
 						<span className="">
 							<AboutCard
-								number="01"
+								number="01."
 								title="Networking Opportunities"
 								text="Connect with Itsekiris in Chicago and surrounding areas and build personal and professional networks. "
 							/>
 							<AboutCard
-								number="02"
+								number="02."
 								title="Professional Development"
 								text="Attend our monthly gatherings that contribute to your personal and professional growth. "
 							/>
 							<AboutCard
-								number="03"
+								number="03."
 								title="Community Service.  "
 								text="Participate in initiatives that give back to our community in Nigeria, making a tangible difference.  "
 							/>
 							<AboutCard
-								number="04"
+								number="04."
 								title="Member Testimonials"
 								text="Being part of the Itsekiri Association of Chicago has given me a sense of belonging and an opportunity to contribute to our homeland's development. It's a powerful connection to our roots.-A satisfied member. "
 							/>
