@@ -1,11 +1,28 @@
-import Button from "../Reusable/Button";
+// import Button from "../Reusable/Button";
 import logo from "../assets/logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import { useRef } from "react";
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
+	const emailInputRef = useRef();
+	const contactHandler = async (e) => {
+		e?.preventDefault();
+		const enteredEmail = emailInputRef.current.value;
+
+		if (enteredEmail === "") {
+			alert("Please enter an email address");
+			return;
+		}
+		if (enteredEmail === emailInputRef.current.value) {
+			alert("Subscribed successfully");
+			console.log("Successful");
+		} else {
+			alert("Emails do not match");
+		}
+	};
 	return (
 		<footer
 			id="contact"
@@ -49,15 +66,20 @@ const Footer = () => {
 							Subscribe to our newsletter for monthly insights, stories,
 							opportunities to engage with the Itsekiri community.
 						</p>
-						<li className="flex flex-row  sm:flex-col sm:gap-4">
+						<form
+							onSubmit={contactHandler}
+							className="flex flex-row  sm:flex-col sm:gap-4">
 							<input
 								type="text"
+								ref={emailInputRef}
 								className="py-[8px] px-[16%] rounded-xl text-black "
 							/>
-							<Button className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%] sm:ml-1 cursor-pointer">
+							<button
+								type="submit"
+								className="bg-[#E37619] rounded-xl py-[14px] px-[20px] text-[16px] shadow border-0 ml-[8%] sm:ml-1 cursor-pointer">
 								Subscribe
-							</Button>
-						</li>
+							</button>
+						</form>
 						<p className="sm:text-sm">
 							By subscribing you agree to with our Privacy Policy and provide
 							consent to receive updates from our company.
