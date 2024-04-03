@@ -49,7 +49,7 @@ const Navbar = () => {
 						onClick={() => setIsMenuToggled(!isMenuToggled)}>
 						<ImCancelCircle className="h-6 w-6 sm:h-4 sm:w-4 text-gray-400" />
 					</button>
-					<div className="flex flex-col justify-between text-white text-[16px] gap-6 px-3 my-10 ">
+					<div className="flex flex-col justify-between text-[#2d2735] text-[16px] gap-6 px-3 my-10 ">
 						<a href="">About Us</a>
 						<a href="">Culture</a>
 						<a href="">Gallery</a>
