@@ -2,7 +2,8 @@
 // import React from 'react'
 
 import Button from "../Reusable/Button";
-import AboutCard from "../Reusable/AboutCard";
+// import MembershipCard from "../Reusable/AboutCard";
+import MembershipCard from "../Reusable/MemberShipCard";
 import memberImage from "../assets/membership.png";
 
 const Membership = () => {
@@ -17,7 +18,7 @@ const Membership = () => {
 					<img src={memberImage} alt="membershipImage" className="w-full" />
 					<div className="leading-[3rem] my-10">
 						<h3 className="font-bold text-2xl">Membership and Benefits</h3>
-						<p className="leading-[2.5rem] pt-[20px] pb-[4rem] text-justify">
+						<p className="leading-[2.5rem] pt-[10px] pb-[1rem] text-justify">
 							Embrace your Itsekiri heritage by joining our General Membership—a
 							community that welcomes every Itsekiri and friend of Itsekiri
 							culture. As a member, you'll engage in preserving and celebrating
@@ -39,38 +40,38 @@ const Membership = () => {
 				{/* right */}
 				<div className="flex flex-col gap-3">
 					<div className="flex flex-col gap-3 py-2">
-						<h4>Joining Process</h4>
+						<h4 className="font-bold text-lg"> Joining Process</h4>
 						<p>
 							Becoming a member is easy. Follow our step-by-step guide or click
 							here to start your journey with us today.
 						</p>
 					</div>
-					<AboutCard
+					<MembershipCard
 						number="01."
 						title="Access the Form"
 						text="Becoming a member is easy. Follow our step-by-step guide or click here to start your journey with us today. . "
 					/>
-					<AboutCard
+					<MembershipCard
 						number="02."
 						title="Access the Form"
 						text="Navigate to our online Membership Form directly on our website. . "
 					/>
-					<AboutCard
+					<MembershipCard
 						number="03."
 						title="Fill in Details.  "
 						text="Provide your personal details, Itsekiri heritage information, and express your interests and potential contributions.. .  "
 					/>
-					<AboutCard
+					<MembershipCard
 						number="04."
 						title="Await Confirmation"
 						text="Receive an immediate email confirmation of your application receipt. . "
 					/>
-					<AboutCard
+					<MembershipCard
 						number="05."
 						title="Approval & Welcome"
 						text="Our team will review your application and send a welcome packet with full membership details, benefits, and upcoming events within one week. . "
 					/>
-					<AboutCard
+					<MembershipCard
 						number="06."
 						title="Get Involved"
 						text="With confirmation, you’ll gain immediate access to member-exclusive resources and a calendar of events so you can start participating right away. . "
