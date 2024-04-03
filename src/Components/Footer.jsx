@@ -104,7 +104,7 @@ const Footer = () => {
 					<p className="sm:text-sm">Terms and Conditions</p>
 					<p className="sm:text-sm"> Privacy Policy</p>
 				</article>
-				<article className="ml-[42%] md:ml-1 sm:ml-1 sm:pt-8 sm:text-sm">
+				<article className="ml-[28rem] md:ml-1 sm:ml-1 sm:pt-8 sm:text-sm">
 					© {currentYear} Itsekiri Association of Chicago . All rights
 					reserved.
 				</article>
