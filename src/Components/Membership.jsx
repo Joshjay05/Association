@@ -18,7 +18,7 @@ const Membership = () => {
 					<img src={memberImage} alt="membershipImage" className="w-full" />
 					<div className="leading-[3rem] my-10">
 						<h3 className="font-bold text-2xl">Membership and Benefits</h3>
-						<p className="leading-[2rem] pt-[2rem] pb-[2rem] text-justify">
+						<p className="leading-[2rem] py-[2rem]  text-justify">
 							Embrace your Itsekiri heritage by joining our General Membership—a
 							community that welcomes every Itsekiri and friend of Itsekiri
 							culture. As a member, you'll engage in preserving and celebrating
