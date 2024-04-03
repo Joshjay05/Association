@@ -45,7 +45,7 @@ const About = () => {
 				</h4>
 				<article className="flex flex-row  sm:flex-col md:flex-col justify-between gap-8">
 					<div className="w-1/2 md:w-full sm:w-full">
-						<img src={abt} alt="about-us" className="w-full" />
+						<img src={abt} alt="about-us" className="md:w-full sm:w-full" />
 					</div>
 					<div className=" w-1/2 md:w-full sm:w-full">
 						<span className="">
@@ -61,7 +61,7 @@ const About = () => {
 							/>
 							<AboutCard
 								number="03"
-								title="Participate in initiatives that give back to our community in Nigeria, making a tangible difference.  "
+								title="Community Service.  "
 								text="Participate in initiatives that give back to our community in Nigeria, making a tangible difference.  "
 							/>
 							<AboutCard
@@ -71,7 +71,7 @@ const About = () => {
 							/>
 						</span>
 						<div style={{ marginBlock: "30px" }}>
-							<Button className="bg-[#E37619] border rounded-lg py-[24px] px-[12px] text-white text-[16px] ml-3 mt-6 cursor-pointer">
+							<Button className="bg-[#E37619] border rounded-lg py-[18px] px-[24px] text-white text-[16px] ml-3 mt-6 cursor-pointer">
 								Join Our Community Today
 							</Button>
 						</div>
