@@ -15,9 +15,9 @@ const Membership = () => {
 				{/* left */}
 				<div className="flex flex-col gap-4">
 					<img src={memberImage} alt="membershipImage" className="w-full" />
-					<div className="leading-[3rem]">
+					<div className="leading-[3rem] my-10">
 						<h3 className="font-bold text-2xl">Membership and Benefits</h3>
-						<p className="leading-[2.5rem] my-[12px] text-justify">
+						<p className="leading-[2.5rem] pt-[20px] pb-[4rem] text-justify">
 							Embrace your Itsekiri heritage by joining our General Membership—a
 							community that welcomes every Itsekiri and friend of Itsekiri
 							culture. As a member, you'll engage in preserving and celebrating
@@ -29,9 +29,11 @@ const Membership = () => {
 							vibrancy of Itsekiri culture. Join us and enrich not just your own
 							life but the fabric of our entire community.
 						</p>
-						<Button className="bg-[#E37619] border text-white rounded-lg py-[24px] px-[16px] text-[16px] cursor-pointer">
-							Become a Member
-						</Button>
+						<div>
+							<Button className="bg-[#E37619] border text-white rounded-lg py-[18px] px-[24px] my-[8rem] text-[16px] cursor-pointer">
+								Become a Member
+							</Button>
+						</div>
 					</div>
 				</div>
 				{/* right */}
