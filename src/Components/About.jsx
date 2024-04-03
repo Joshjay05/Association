@@ -70,7 +70,7 @@ const About = () => {
 								text="Being part of the Itsekiri Association of Chicago has given me a sense of belonging and an opportunity to contribute to our homeland's development. It's a powerful connection to our roots.-A satisfied member. "
 							/>
 						</span>
-						<div style={{ marginBlock: "30px" }}>
+						<div className="lg:my-[4rem] md:my-[30px] sm:[30px]">
 							<Button className="bg-[#E37619] border rounded-lg py-[18px] px-[24px] text-white text-[16px] ml-3 mt-6 cursor-pointer">
 								Join Our Community Today
 							</Button>
