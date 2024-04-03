@@ -45,9 +45,9 @@ const Navbar = () => {
 			{!isAboveMediumScreens && isMenuToggled && (
 				<article className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
 					<button
-						className="flex justify-end p-12"
+						className="flex justify-end p-2"
 						onClick={() => setIsMenuToggled(!isMenuToggled)}>
-						<ImCancelCircle className="h-6 w-6 text-gray-400" />
+						<ImCancelCircle className="h-6 w-6 sm:h-4 sm:w-4 text-gray-400" />
 					</button>
 					<div className="flex flex-col justify-between text-white text-[16px] gap-6 px-3 my-10 ">
 						<a href="">About Us</a>
