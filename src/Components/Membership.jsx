@@ -14,7 +14,7 @@ const Membership = () => {
 			<article className="grid grid-cols-2 sm:flex sm:flex-col md:flex md:flex-col mx-[4%] gap-12">
 				{/* left */}
 				<div className="flex flex-col gap-4">
-					<img src={memberImage} alt="membershipImage" />
+					<img src={memberImage} alt="membershipImage" className="w-full" />
 					<div className="leading-[3rem]">
 						<h3 className="font-bold text-2xl">Membership and Benefits</h3>
 						<p className="leading-[2.5rem] my-[12px] text-justify">

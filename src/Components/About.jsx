@@ -30,7 +30,7 @@ const About = () => {
 					</p>
 				</div>
 				<div className="relative  md:w-full">
-					<img src={thum} alt="" className="" />
+					<img src={thum} alt="" className="w-full" />
 					<img
 						src={play}
 						alt=""
@@ -45,7 +45,7 @@ const About = () => {
 				</h4>
 				<article className="flex flex-row  sm:flex-col md:flex-col justify-between gap-8">
 					<div className="w-1/2 md:w-full sm:w-full">
-						<img src={abt} alt="about-us" />
+						<img src={abt} alt="about-us" className="w-full" />
 					</div>
 					<div className=" w-1/2 md:w-full sm:w-full">
 						<span className="">
