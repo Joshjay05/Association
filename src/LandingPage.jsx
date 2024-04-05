@@ -6,10 +6,12 @@ import Events from "./Components/Events";
 import Membership from "./Components/Membership";
 import NewsUpdates from "./Components/NewsUpdates";
 import Volunteer from "./Components/Volunteer";
+import Navbar from "./Components/Navbar";
 
 const LandingPage = () => {
 	return (
 		<div>
+			<Navbar />
 			<About />
 			<Events />
 			<Volunteer />
