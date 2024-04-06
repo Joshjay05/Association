@@ -76,16 +76,7 @@ export default {
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
-      backgroundImage: ({
-        'hero': "url('./asset/hero.png')",
-        'card': "url('./images/thumbnail-background.svg')",
-        // 'ccar':'url()'
-      }),
-      //  backgroundImage: (theme) =>({
-      //   'hero': "url('./images/collection-background.svg')",
-      //   'card': "url('./images/thumbnail-background.svg')",
-      //   // 'ccar':'url()'
-      // }),
+    
       screens: {
         "wide": "1440px"
       }
