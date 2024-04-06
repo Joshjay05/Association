@@ -35,11 +35,11 @@ const Footer = () => {
 				headers: {
 					"Content-Type": "application/json",
 				},
-				body: JSON.stringify({ email: enteredEmail }), // Ensure email is sent as an object
+				body: JSON.stringify({ email: enteredEmail }),
 			});
 			if (response.ok) {
 				toast.success("Form submitted successfully!");
-				setPreviousEmail(enteredEmail); // Update previous email if submission is successful
+				setPreviousEmail(enteredEmail); // This function Updates previous email if submission is successful
 			} else {
 				throw new Error("Failed to submit form");
 			}
