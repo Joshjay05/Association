@@ -68,7 +68,7 @@ function FormPage() {
 				onSubmit={handleSubmit}
 				action="https://getform.io/f/pbnvxlrb"
 				method="POST"
-				className="bg-white h-[50%] w-[40%] sm:w-full md:w-[80%] border rounded-lg p-4 flex flex-col ">
+				className="bg-white h-[50%] w-[40%] sm:w-full sm:h-auto md:w-[80%] md:h-auto border rounded-lg p-4 flex flex-col ">
 				<h1 className="font-bold text-lg my-3">Fill out the Form</h1>
 				<div className="flex flex-col gap-2">
 					<label htmlFor="name">Name:</label>
