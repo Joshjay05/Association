@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -9,9 +9,24 @@ function FormPage() {
 		name: "",
 		email: "",
 	});
+	// State to keep track of submitted emails
+	const [submittedEmails, setSubmittedEmails] = useState([]);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
+		// Check for empty fields
+		if (!formData.name.trim() || !formData.email.trim()) {
+			toast.error("Please fill out all fields");
+			return;
+		}
+
+		// Check if email already exists
+		if (submittedEmails.includes(formData.email)) {
+			toast.error("Email has already been submitted");
+			return;
+		}
+
 		try {
 			const response = await fetch("https://getform.io/f/pbnvxlrb", {
 				method: "POST",
@@ -24,8 +39,12 @@ function FormPage() {
 				toast.success("Form submitted successfully!", {
 					onClose: () => navigate("/"), // Navigate after toast closes
 				});
-			}
-			if (!response.ok) {
+				// Add submitted email to the list
+				setSubmittedEmails((prevSubmittedEmails) => [
+					...prevSubmittedEmails,
+					formData.email,
+				]);
+			} else {
 				throw new Error("Failed to submit form");
 			}
 		} catch (error) {
