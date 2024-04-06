@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -68,7 +68,7 @@ function FormPage() {
 				onSubmit={handleSubmit}
 				action="https://getform.io/f/pbnvxlrb"
 				method="POST"
-				className="bg-white h-[50%] w-[40%] border rounded-lg p-4 flex flex-col ">
+				className="bg-white h-[50%] w-[40%] sm:w-full md:w-[80%] border rounded-lg p-4 flex flex-col ">
 				<h1 className="font-bold text-lg my-3">Fill out the Form</h1>
 				<div className="flex flex-col gap-2">
 					<label htmlFor="name">Name:</label>
