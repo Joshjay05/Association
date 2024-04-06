@@ -10,7 +10,7 @@ import Navbar from "./Components/Navbar";
 
 const LandingPage = () => {
 	return (
-		<div>
+		<div className="z-1">
 			<Navbar />
 			<About />
 			<Events />

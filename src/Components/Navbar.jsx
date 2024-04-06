@@ -11,7 +11,7 @@ const Navbar = () => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 	// const [isMenuToggled, setIsMenuToggled] = useState(false);
 	return (
-		<header className="bg-[#2d2735] relative  md:h-100vh md:pb-10 md:pt-2 sm:pb-6 ">
+		<header className="bg-[#2d2735] relative  md:h-100vh md:pb-10 md:pt-2 sm:pb-6 z-10 ">
 			{isAboveMediumScreens ? (
 				<section className="flex flex-row justify-between pb-10 relative">
 					<article className="text-white-400 absolute inset-y-[38%] left-[5.6%]  w-[90%] md:w-auto ">

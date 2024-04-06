@@ -1,124 +1,89 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
-// import React from 'react'
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Registration = () => {
+function FormPage() {
+	const navigate = useNavigate();
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+	});
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const response = await fetch("https://getform.io/f/pbnvxlrb", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+			if (response.ok) {
+				toast.success("Form submitted successfully!", {
+					onClose: () => navigate("/"), // Navigate after toast closes
+				});
+			}
+			if (!response.ok) {
+				throw new Error("Failed to submit form");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+			toast.error("Failed to submit form");
+			// Handle error (e.g., display error message)
+		}
+	};
+
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setFormData((prevData) => ({
+			...prevData,
+			[name]: value,
+		}));
+	};
+
 	return (
-		<div>
-			Registration
+		<div className="bg-[rgba(0,0,0,0.425)] flex flex-col justify-center items-center w-[100%] h-[100vh] right-0 top-0 backdrop: left-0">
 			<form
-				id="fs-frm"
-				name="registration-form"
-				acceptCharset="utf-8"
-				action="https://formspree.io/f/{form_id}"
-				method="post">
-				<fieldset id="fs-frm-inputs" />
-				<label htmlFor="full-name">Full Name</label>
-				<input
-					type="text"
-					name="name"
-					id="full-name"
-					placeholder="First and Last"
-					required=""
-				/>
-				<label htmlFor="email-address">Email Address</label>
-				<input
-					type="email"
-					name="_replyto"
-					id="email-address"
-					placeholder="email@domain.tld"
-					required=""
-				/>
-				<label htmlFor="street-address">Street Address</label>
-				<input
-					type="text"
-					name="street"
-					id="street-address"
-					placeholder="Street"
-					required=""
-				/>
-				<fieldset className="locale">
-					<legend>Locale</legend>
-					<input type="text" name="city" placeholder="City" required="" />
-					<select name="state" required="">
-						<option value="" selected="" disabled="">
-							State
-						</option>
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="AZ">Arizona</option>
-						<option value="AR">Arkansas</option>
-						<option value="CA">California</option>
-						<option value="CO">Colorado</option>
-						<option value="CT">Connecticut</option>
-						<option value="DE">Delaware</option>
-						<option value="DC">District Of Columbia</option>
-						<option value="FL">Florida</option>
-						<option value="GA">Georgia</option>
-						<option value="HI">Hawaii</option>
-						<option value="ID">Idaho</option>
-						<option value="IL">Illinois</option>
-						<option value="IN">Indiana</option>
-						<option value="IA">Iowa</option>
-						<option value="KS">Kansas</option>
-						<option value="KY">Kentucky</option>
-						<option value="LA">Louisiana</option>
-						<option value="ME">Maine</option>
-						<option value="MD">Maryland</option>
-						<option value="MA">Massachusetts</option>
-						<option value="MI">Michigan</option>
-						<option value="MN">Minnesota</option>
-						<option value="MS">Mississippi</option>
-						<option value="MO">Missouri</option>
-						<option value="MT">Montana</option>
-						<option value="NE">Nebraska</option>
-						<option value="NV">Nevada</option>
-						<option value="NH">New Hampshire</option>
-						<option value="NJ">New Jersey</option>
-						<option value="NM">New Mexico</option>
-						<option value="NY">New York</option>
-						<option value="NC">North Carolina</option>
-						<option value="ND">North Dakota</option>
-						<option value="OH">Ohio</option>
-						<option value="OK">Oklahoma</option>
-						<option value="OR">Oregon</option>
-						<option value="PA">Pennsylvania</option>
-						<option value="RI">Rhode Island</option>
-						<option value="SC">South Carolina</option>
-						<option value="SD">South Dakota</option>
-						<option value="TN">Tennessee</option>
-						<option value="TX">Texas</option>
-						<option value="UT">Utah</option>
-						<option value="VT">Vermont</option>
-						<option value="VA">Virginia</option>
-						<option value="WA">Washington</option>
-						<option value="WV">West Virginia</option>
-						<option value="WI">Wisconsin</option>
-						<option value="WY">Wyoming</option>
-					</select>
+				onSubmit={handleSubmit}
+				action="https://getform.io/f/pbnvxlrb"
+				method="POST"
+				className="bg-white h-[50%] w-[40%] border rounded-lg p-4 flex flex-col ">
+				<h1 className="font-bold text-lg my-3">Fill out the Form</h1>
+				<div className="flex flex-col gap-2">
+					<label htmlFor="name">Name:</label>
 					<input
+						className="border border-black p-2 my-2 outline-[black]"
 						type="text"
-						name="postal-code"
-						placeholder="12345"
-						required=""
+						id="name"
+						name="name"
+						value={formData.name}
+						onChange={handleChange}
+						required
 					/>
-				</fieldset>
-				<label htmlFor="note">Note</label>
-				<textarea
-					rows="2"
-					name="note"
-					id="note"
-					placeholder="Include any additional information"></textarea>
-				<input
-					type="hidden"
-					name="_subject"
-					id="email-subject"
-					value="Registration Form Submission"
-				/>
-
-				<input type="submit" value="Register" />
+				</div>
+				<div className="flex flex-col gap-2 my-2">
+					<label htmlFor="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						value={formData.email}
+						onChange={handleChange}
+						required
+						className="border  border-black p-2 outline-slate-gray"
+					/>
+				</div>
+				<button
+					type="submit"
+					className="bg-[#E37619] py-[8px] px-[12px] text-white mx-[20%] my-1 rounded-lg ">
+					Submit
+				</button>
 			</form>
+			<ToastContainer />
 		</div>
 	);
-};
+}
 
-export default Registration;
+export default FormPage;

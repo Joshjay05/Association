@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SharedLayout from "./Layout/SharedLayout";
 import LandingPage from "./LandingPage";
-import Registration from "./Components/Registration";
+import FormPage from "./Components/Registration";
 
 const App = () => {
 	return (
@@ -10,8 +10,8 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<SharedLayout />}>
 						<Route index element={<LandingPage />} />
-						<Route path="reg" element={<Registration />} />
 					</Route>
+					<Route path="reg" element={<FormPage />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

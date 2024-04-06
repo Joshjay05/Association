@@ -16,7 +16,7 @@ const Nav = () => {
 		<div>
 			<nav
 				className="bg-[#2d2735] flex flex-row items-center 
-         pt-2  mx-auto w-{80%} justify-between ">
+         pt-2  mx-auto w-{80%} justify-between z-30 ">
 				<article className="pl-[4%]">
 					<img src={logo} alt="logo" className="md:h-[6vh] sm:h-6" />
 				</article>
@@ -55,18 +55,20 @@ const Nav = () => {
 						<ImCancelCircle className="h-6 w-6 sm:h-4 sm:w-4 text-gray-400" />
 					</button>
 					<div className="flex flex-col justify-between text-[#2d2735] text-[16px] gap-6 px-3 my-10 ">
-						<a href="">About Us</a>
+						<a href="#about">About Us</a>
 						<a href="">Culture</a>
-						<a href="">Gallery</a>
-						<a href="">Volunteer</a>
-						<a href="">Contact</a>
+						<a href="#gallery">Gallery</a>
+						<a href="#volunteer">Volunteer</a>
+						<a href="#contact">Contact</a>
 					</div>
-
-					<Button
-						href=""
-						className="bg-[#E37619] rounded-md py-[14px] px-[20px] ml-8 border-0 border-transparent shadow text-white mt-[8rem] cursor-pointer">
-						Join Us Today
-					</Button>
+					<Link to="reg">
+						<Button
+							onClick={() => setIsMenuToggled(!isMenuToggled)}
+							href=""
+							className="bg-[#E37619] rounded-md py-[14px] px-[20px] ml-8 border-0 border-transparent shadow text-white mt-[8rem] cursor-pointer">
+							Join Us Today
+						</Button>
+					</Link>
 				</article>
 			)}
 			{/* end of Navbar */}
