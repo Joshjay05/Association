@@ -9,19 +9,19 @@ function FormPage() {
 		name: "",
 		email: "",
 	});
-	// State to keep track of submitted emails
+	// This State keep track of submitted emails
 	const [submittedEmails, setSubmittedEmails] = useState([]);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		// Check for empty fields
+		// this function/logic Checks for empty fields
 		if (!formData.name.trim() || !formData.email.trim()) {
 			toast.error("Please fill out all fields");
 			return;
 		}
 
-		// Check if email already exists
+		// this Checks if email already exists
 		if (submittedEmails.includes(formData.email)) {
 			toast.error("Email has already been submitted");
 			return;
@@ -37,9 +37,9 @@ function FormPage() {
 			});
 			if (response.ok) {
 				toast.success("Form submitted successfully!", {
-					onClose: () => navigate("/"), // Navigate after toast closes
+					onClose: () => navigate("/"), // Navigates to the homepage after the toast closes
 				});
-				// Add submitted email to the list
+
 				setSubmittedEmails((prevSubmittedEmails) => [
 					...prevSubmittedEmails,
 					formData.email,
@@ -49,8 +49,8 @@ function FormPage() {
 			}
 		} catch (error) {
 			console.error("Error:", error);
+			// displays error message
 			toast.error("Failed to submit form");
-			// Handle error (e.g., display error message)
 		}
 	};
 
