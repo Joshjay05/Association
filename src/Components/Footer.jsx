@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { useRef, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	const [previousEmail, setPreviousEmail] = useState();
@@ -12,28 +14,41 @@ const Footer = () => {
 	const contactHandler = async (e) => {
 		e?.preventDefault();
 
-		const enteredEmail = emailInputRef.current.value;
+		const enteredEmail = emailInputRef.current.value.trim();
 
 		if (enteredEmail === "") {
-			alert("Please enter an email address");
+			toast.info("Please enter an email address");
 			return;
 		}
 		if (!enteredEmail.includes("@")) {
-			alert("Error: Please enter a valid email address");
+			toast.error("Error: Please enter a valid email address");
 			return;
 		}
 		if (enteredEmail === previousEmail) {
-			alert("Error: You've already subscribed with this email");
+			toast.error("Error: You've already subscribed with this email");
 			return;
 		}
 
-		if (enteredEmail === emailInputRef.current.value) {
-			alert("Subscribed successfully");
-			console.log("Successful");
-			// return;
+		try {
+			const response = await fetch("https://getform.io/f/pbnvxlrb", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ email: enteredEmail }), // Ensure email is sent as an object
+			});
+			if (response.ok) {
+				toast.success("Form submitted successfully!");
+				setPreviousEmail(enteredEmail); // Update previous email if submission is successful
+			} else {
+				throw new Error("Failed to submit form");
+			}
+		} catch (error) {
+			console.error("Error:", error);
+			toast.error("Failed to submit form");
 		}
-		setPreviousEmail(enteredEmail);
 	};
+
 	return (
 		<footer
 			id="contact"
@@ -79,6 +94,8 @@ const Footer = () => {
 						</p>
 						<form
 							onSubmit={contactHandler}
+							action="https://getform.io/f/pbnvxlrb"
+							method="POST"
 							className="flex flex-row  sm:flex-col sm:gap-4">
 							<input
 								type="email"
@@ -109,6 +126,7 @@ const Footer = () => {
 					reserved.
 				</article>
 			</section>
+			<ToastContainer />
 		</footer>
 	);
 };
