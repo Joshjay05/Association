@@ -4,6 +4,7 @@ import abt from "../assets/About.png";
 import AboutCard from "../Reusable/AboutCard";
 import Button from "../Reusable/Button";
 import play from "../assets/play.png";
+import { Link } from "react-router-dom";
 // import ReactPlayer from "react-player";
 const About = () => {
 	return (
@@ -70,11 +71,11 @@ const About = () => {
 								text="Being part of the Itsekiri Association of Chicago has given me a sense of belonging and an opportunity to contribute to our homeland's development. It's a powerful connection to our roots.-A satisfied member. "
 							/>
 						</span>
-						<div className="lg:my-[4rem] md:my-[30px] sm:[30px]">
+						<Link to="reg" className="lg:my-[4rem] md:my-[30px] sm:my-[2rem]">
 							<Button className="bg-[#E37619] border rounded-lg py-[18px] px-[24px] text-white text-[16px] ml-3 mt-6 cursor-pointer">
 								Join Our Community Today
 							</Button>
-						</div>
+						</Link>
 					</div>
 				</article>
 			</section>

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // import React from 'react'
 
+import { Link } from "react-router-dom";
 import Button from "../Reusable/Button";
 // import MembershipCard from "../Reusable/AboutCard";
 import MembershipCard from "../Reusable/MemberShipCard";
@@ -30,11 +31,11 @@ const Membership = () => {
 							vibrancy of Itsekiri culture. Join us and enrich not just your own
 							life but the fabric of our entire community.
 						</p>
-						<div>
+						<Link to="reg">
 							<Button className="bg-[#E37619] border text-white rounded-lg py-[18px] px-[24px] my-[8rem] text-[16px] cursor-pointer">
 								Become a Member
 							</Button>
-						</div>
+						</Link>
 					</div>
 				</div>
 				{/* right */}

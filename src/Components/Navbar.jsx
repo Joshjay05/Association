@@ -4,6 +4,7 @@ import headerImage from "../assets/headerImg.png";
 import Button from "../Reusable/Button";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import useMediaQuery from "../Hooks/UseMediaQuery";
+import { Link } from "react-router-dom";
 // import { useState } from "react";
 // import { ImCancelCircle } from "react-icons/im";
 // import { Link } from "react-router-dom";
@@ -29,12 +30,12 @@ const Navbar = () => {
 								className="border-2 border-white-400 rounded-lg py-2 px-4 md:py-3 md:px-6  sm:shadow cursor-pointer">
 								Discover Your Roots
 							</Button>
-							<Button
-								href=""
-								className="bg-[#E37619] rounded-lg py-2 px-4 md:py-3 md:px-6 text-base shadow border-0 cursor-pointer">
-								{" "}
-								Join Us Today
-							</Button>
+							<Link to="reg">
+								<Button className="bg-[#E37619] rounded-lg py-2 px-4 md:py-3 md:px-6 text-base shadow border-0 cursor-pointer">
+									{" "}
+									Join Us Today
+								</Button>
+							</Link>
 						</div>
 					</article>
 					<div
@@ -67,12 +68,14 @@ const Navbar = () => {
 								className="border-2 border-white-400 rounded-lg  shadow text-sm p-1 sm:p-1 cursor-pointer ">
 								Discover Your Roots
 							</Button>
-							<Button
-								href=""
-								className="bg-[#E37619] rounded-lg py-[2%] px-[5%] text-[14px] shadow border-0 sm:p-1 sm:text-xs cursor-pointer ">
-								{" "}
-								Join Us Today
-							</Button>
+							<Link to="reg">
+								<Button
+									href=""
+									className="bg-[#E37619] rounded-lg py-[2%] px-[5%] text-[14px] shadow border-0 sm:p-1 sm:text-xs cursor-pointer ">
+									{" "}
+									Join Us Today
+								</Button>
+							</Link>
 						</div>
 					</article>
 					<div
