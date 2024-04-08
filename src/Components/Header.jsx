@@ -11,7 +11,7 @@ const Header = () => {
 			{isAboveMediumScreens ? (
 				<section className="flex flex-row justify-between pb-10 relative">
 					<article className="text-white-400 absolute inset-y-[38%] left-[5.6%]  w-[90%] md:w-auto ">
-						<h4 className="text-2xl md:text-sm lg:text-4xl  font-bold w-[60%]">
+						<h4 className="text-2xl md:text-lg lg:text-4xl  font-bold w-[60%]">
 							Embrace Your <span className="bg-[#E37619] px-1 ">Heritage,</span>{" "}
 							Enrich Your Connections
 						</h4>
@@ -44,14 +44,14 @@ const Header = () => {
 			) : (
 				<section className="flex flex-row justify-between pb-6 relative">
 					<article className="flex flex-col justify-evenly text-white-400 absolute top-[20%]  md:top-[28%] sm:top-[5vh] sm:left-[7] left-[14.6%] justify-items-center ">
-						<h4 className="text-[16px] w-[60%] font-bold sm:text-sm sm:pb-2">
+						<h4 className="md:text-xl w-[60%] font-bold sm:text-sm sm:pb-2">
 							Embrace Your{" "}
 							<span className="bg-[#E37619] px-1 sm:leading-6  ">
 								Heritage,
 							</span>{" "}
 							Enrich Your Connections
 						</h4>
-						<p className="md:text-[12px] leading-[1.5em]  md:py-2 sm:text-xs sm:leading-3">
+						<p className="md:text-base leading-[1.5em]  md:py-2 sm:text-xs sm:leading-3">
 							Journey through Time, Tradition, and <br />
 							Triumphs in the Heart of Itsekiri Culture.
 						</p>
