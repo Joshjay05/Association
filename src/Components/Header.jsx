@@ -61,14 +61,13 @@ const Header = () => {
 								className="border-2 border-white-400 rounded-lg  shadow text-sm p-1 sm:p-1 cursor-pointer ">
 								Discover Your Roots
 							</Button>
-							<Link to="reg">
-								<Button
-									href=""
-									className="bg-[#E37619] rounded-lg py-[2%] px-[5%] text-[14px] shadow border-0 sm:p-1 sm:text-xs cursor-pointer ">
-									{" "}
-									Join Us Today
-								</Button>
-							</Link>
+
+							<Button
+								href=""
+								className="bg-[#E37619] rounded-lg py-[2%] px-[5%] text-[14px] shadow border-0 sm:p-1 sm:text-xs cursor-pointer ">
+								{" "}
+								<Link to="reg">Join Us Today</Link>
+							</Button>
 						</div>
 					</article>
 					<div
