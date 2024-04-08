@@ -1,16 +1,11 @@
-// import React from 'react'
-// import logo from "../assets/logo.png";
 import headerImage from "../assets/headerImg.png";
 import Button from "../Reusable/Button";
-// import { RxHamburgerMenu } from "react-icons/rx";
+
 import useMediaQuery from "../Hooks/UseMediaQuery";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
-// import { ImCancelCircle } from "react-icons/im";
-// import { Link } from "react-router-dom";
-const Navbar = () => {
+
+const Header = () => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-	// const [isMenuToggled, setIsMenuToggled] = useState(false);
 	return (
 		<header className="bg-[#2d2735] relative  md:h-100vh md:pb-10 md:pt-2 sm:pb-6 z-10 ">
 			{isAboveMediumScreens ? (
@@ -24,14 +19,12 @@ const Navbar = () => {
 							Journey through Time, Tradition, and <br />
 							Triumphs in the Heart of Itsekiri Culture.
 						</p>
-						<div className="flex flex-row gap-3">
-							<Button
-								href=""
-								className="border-2 border-white-400 rounded-lg py-2 px-4 md:py-3 md:px-6  sm:shadow cursor-pointer">
+						<div className="flex flex-row gap-3 items-center">
+							<Button className="border-2 border-white-400 rounded-lg py-2 px-4 md:py-3 md:px-6  sm:shadow cursor-pointer">
 								Discover Your Roots
 							</Button>
 							<Link to="reg">
-								<Button className="bg-[#E37619] rounded-lg py-2 px-4 md:py-3 md:px-6 text-base shadow border-0 cursor-pointer">
+								<Button className="bg-[#E37619] rounded-lg py-3 px-4 md:py-3 md:px-6 text-base shadow border-0 cursor-pointer">
 									{" "}
 									Join Us Today
 								</Button>
@@ -93,4 +86,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default Header;

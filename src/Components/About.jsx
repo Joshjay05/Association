@@ -2,7 +2,7 @@
 import thum from "../assets/poster.png";
 import abt from "../assets/About.png";
 import AboutCard from "../Reusable/AboutCard";
-// import Button from "../Reusable/Button";
+// import Button from "../Reusable/Button";git
 import play from "../assets/play.png";
 import { Link } from "react-router-dom";
 // import ReactPlayer from "react-player";

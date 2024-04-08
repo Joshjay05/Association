@@ -30,7 +30,7 @@ const Footer = () => {
 		}
 
 		try {
-			const response = await fetch("https://getform.io/f/pbnvxlrb", {
+			const response = await fetch("hhttps://getform.io/f/lbjkoqva", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

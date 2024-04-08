@@ -5,6 +5,7 @@ import blogtwo from "../assets/blogtwo.png";
 import blogthree from "../assets/blogthree.png";
 import arrowleft from "../assets/arrowleft.png";
 import arrowright from "../assets/rightarrow.png";
+import news from "../assets/newsthree.png";
 import { useState } from "react";
 const Blogs = () => {
 	const blogs = [
@@ -47,7 +48,7 @@ const Blogs = () => {
 		},
 		{
 			id: 5,
-			src: blogthree,
+			src: news,
 			title: "Faces of Itsekiri: Spotlight on Remarkable Individuals",
 			text: "Introduce the vibrant personalities within the Itsekiri community who have made significant contributions in various fields.",
 			word: "open blog",
